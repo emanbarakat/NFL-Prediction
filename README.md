@@ -87,7 +87,7 @@ The engineered features improved the recorded average validation AUC by approxim
 ## Repository Structure
 
 ```text
-NFL-Prediction/
+nfl-draft-prediction/
 ├── nfl_draft_prediction.ipynb
 ├── requirements.txt
 ├── .gitignore
@@ -99,8 +99,8 @@ NFL-Prediction/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/emanbarakat/NFL-Prediction.git
-cd NFL-Prediction
+git clone https://github.com/emanbarakat/nfl-draft-prediction.git
+cd nfl-draft-prediction
 ```
 
 ### 2. Install dependencies
@@ -150,5 +150,3 @@ nfl_draft_prediction.ipynb
 ## Author
 
 **Eman Barakat**
-
-AI & Software Development | Data Analysis | Machine Learning
