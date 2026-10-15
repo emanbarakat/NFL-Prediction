@@ -60,6 +60,10 @@ The notebook:
 - imputes missing physical measurements using position-based means with a global fallback
 - passes categorical features directly to CatBoost
 
+### Validation Limitation
+
+The current notebook computes position-based imputation statistics before the cross-validation loop. That creates a **mild data-leakage risk** in validation. A stronger next version would fit all preprocessing separately inside each fold.
+
 ## Feature Engineering
 
 The enhanced model adds:
@@ -83,6 +87,8 @@ The main model is a `CatBoostClassifier` evaluated with **5-fold stratified cros
 | CatBoost + engineered features | **0.8391** |
 
 The engineered features improved the recorded average validation AUC by approximately **0.0032**.
+
+These are recorded results from the original experiment. The cleaned notebook was not rerun during the portfolio cleanup because the competition data is not included in the repository.
 
 ## Repository Structure
 
